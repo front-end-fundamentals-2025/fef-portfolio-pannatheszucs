@@ -1,0 +1,45 @@
+* {
+  font-family: "Montserrat", serif;
+}
+
+/* HEADER */
+
+#logo {
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: 1px solid black;
+  display: inline;
+  padding: 5px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  color: black;
+}
+
+/* MAIN */
+
+.me-img {
+  width: 30%;
+}
+
+/* CATEGORY SECTION */
+
+figure {
+  margin-left: 0%;
+}
+
+.category-image {
+  width: 20%;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 1rem;
+  border-top: 1px solid black;
+}
