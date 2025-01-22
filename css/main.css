@@ -4,6 +4,11 @@
 
 /* HEADER */
 
+header {
+  display: flex;
+  align-items: center;
+}
+
 #logo {
   font-weight: 600;
   font-size: 1.2rem;
@@ -13,8 +18,13 @@
 }
 
 ul {
+  display: flex;
   list-style: none;
   padding-left: 0;
+}
+
+li {
+  margin-left: 3rem;
 }
 
 a {
@@ -29,12 +39,20 @@ a {
 
 /* CATEGORY SECTION */
 
+.category-container {
+  display: grid;
+  grid-template-areas:
+    "img img img"
+    "img img img";
+}
+
 figure {
   margin-left: 0%;
+  grid-area: img;
 }
 
 .category-image {
-  width: 20%;
+  width: 100%;
 }
 
 /* FOOTER */
