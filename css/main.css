@@ -24,13 +24,29 @@ ul {
 }
 
 li {
-  margin-left: 3rem;
+  margin-left: 6rem;
 }
 
 a {
   color: black;
 }
 
+@media screen and (max-width: 750px) {
+  header,
+  ul {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  ul {
+    margin-top: 0;
+  }
+
+  li {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+}
 /* MAIN */
 
 .me-img {
@@ -39,20 +55,26 @@ a {
 
 /* CATEGORY SECTION */
 
-.category-container {
-  display: grid;
-  grid-template-areas:
-    "img img img"
-    "img img img";
-}
-
 figure {
   margin-left: 0%;
-  grid-area: img;
 }
 
 .category-image {
   width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .category-container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .category-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* FOOTER */
