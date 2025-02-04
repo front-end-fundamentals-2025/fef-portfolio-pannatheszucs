@@ -83,3 +83,45 @@ footer {
   margin-top: 1rem;
   border-top: 1px solid black;
 }
+
+/* ANIMATIONS */
+
+.hello-container {
+  position: absolute;
+  top: 20%;
+  left: 480px;
+}
+
+.hello-text {
+  width: 100px;
+  animation-name: shake;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  25% {
+    transform: scale(1.2);
+  }
+  40% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+  50% {
+    transform: rotate(20deg) scale(1.2);
+  }
+  60% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+  70% {
+    transform: rotate(20deg) scale(1.2);
+  }
+  80% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+  90% {
+    transform: rotate(20deg) scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
